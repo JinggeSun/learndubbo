@@ -1,0 +1,16 @@
+
+#dubbo配置
+dubbo:
+  application:
+    name: data-produce
+  registry:
+    address: nacos://localhost:8848
+  scan:
+    base-packages: com.sun.dubba
+  protocol:
+    port: 8889
+    name: rest
+    contextpath: restApi
+    server: tomcat
+server:
+  port: 8981
